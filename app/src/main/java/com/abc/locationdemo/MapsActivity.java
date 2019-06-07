@@ -79,10 +79,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Location lastKnownLocation = locationManager.getLastKnownLocation(
                     LocationManager.GPS_PROVIDER);
 
-
-
-            LatLng userLocation = new LatLng(lastKnownLocation.getLatitude(),
-                    lastKnownLocation.getLongitude());
+            LatLng userLocation = new LatLng(10.638146,-85.441469);
             assignLocation(userLocation);
 
         }
@@ -98,7 +95,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                LatLng userLocation = new LatLng(10.638146,-85.441469);
                 assignLocation(userLocation);
 
             }
